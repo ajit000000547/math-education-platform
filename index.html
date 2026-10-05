@@ -3,8 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>MathVerse Pro | Complete Math Learning App</title>
-    <meta name="description" content="Premium math learning app with all chapters, notes, formulas, practice, tests and solutions." />
+    <title>MathVerse Pro | Premium Math Academy</title>
+    <meta name="description" content="Premium math learning platform with chapters, notes, formulas, practice, tests, and dashboard tracking." />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -19,6 +19,7 @@
         </div>
         <nav class="main-nav">
           <a href="index.html">Home</a>
+          <a href="dashboard.html">Dashboard</a>
           <a href="chapters.html">Chapters</a>
           <a href="practice.html">Practice</a>
           <a href="tests.html">Tests</a>
@@ -26,7 +27,7 @@
           <a href="formulas.html">Formulas</a>
         </nav>
         <div class="nav-actions">
-          <button class="btn btn-light" data-link="index.html">Login</button>
+          <button class="btn btn-light" data-link="dashboard.html">Login</button>
           <button class="btn btn-primary" data-link="chapters.html">Premium</button>
         </div>
       </div>
@@ -36,12 +37,12 @@
       <section class="hero">
         <div class="container hero-grid">
           <div class="hero-copy">
-            <span class="badge">Complete Learning System</span>
-            <h1>Learn Math from Chapter 1 to 12</h1>
+            <span class="badge">Premium Learning Experience</span>
+            <h1>Master Math from Basic to Advanced</h1>
             <p>
-              Premium educational platform for arithmetic, algebra, geometry, trigonometry,
-              coordinate geometry, statistics, probability, quadratic equations and calculus.
-              Learn with notes, video-like concept cards, worked solutions, practice sets and tests.
+              Explore chapter-wise learning, concept clarity, formula bank, worked solutions,
+              mock tests, notes, and structured practice designed for students who want strong
+              math fundamentals and exam confidence.
             </p>
             <div class="cta-row">
               <a href="chapters.html" class="btn btn-primary">Explore Chapters</a>
@@ -49,8 +50,8 @@
             </div>
             <ul class="hero-stats">
               <li><strong>12</strong><span>Chapters</span></li>
-              <li><strong>500+</strong><span>Practice Qs</span></li>
-              <li><strong>20+</strong><span>Tests</span></li>
+              <li><strong>500+</strong><span>Questions</span></li>
+              <li><strong>20+</strong><span>Mock Tests</span></li>
             </ul>
           </div>
 
@@ -73,8 +74,8 @@
             </div>
             <div class="study-strip">
               <div>
-                <span>Current Progress</span>
-                <strong>12 Chapters</strong>
+                <span>Current Goal</span>
+                <strong>Complete 12 Chapters</strong>
               </div>
               <div class="progress"><span></span></div>
             </div>
@@ -84,36 +85,76 @@
 
       <section class="trustbar">
         <div class="container trust-items">
-          <div>Concept clarity</div>
-          <div>Exam ready</div>
-          <div>Practice daily</div>
-          <div>Formula bank</div>
-          <div>Visual learning</div>
+          <div>Concept Clarity</div>
+          <div>Exam Focused</div>
+          <div>Practice Daily</div>
+          <div>Formula Bank</div>
+          <div>Visual Learning</div>
+        </div>
+      </section>
+
+      <section class="section dark-panel">
+        <div class="container">
+          <div class="section-head">
+            <span class="eyebrow">Learning Tracks</span>
+            <h2>Choose your path</h2>
+          </div>
+          <div class="feature-grid">
+            <article class="feature-card">
+              <span class="pill green">Beginner</span>
+              <h3>Foundation Math</h3>
+              <p>Number system, fractions, decimals, percentages, ratios, and basic equations.</p>
+            </article>
+            <article class="feature-card">
+              <span class="pill blue">Core</span>
+              <h3>School Curriculum</h3>
+              <p>Algebra, geometry, mensuration, trigonometry, coordinate geometry, and statistics.</p>
+            </article>
+            <article class="feature-card">
+              <span class="pill pink">Advanced</span>
+              <h3>Competitive & Higher Math</h3>
+              <p>Probability, quadratic equations, calculus fundamentals, and higher-order applications.</p>
+            </article>
+          </div>
         </div>
       </section>
 
       <section class="section">
         <div class="container">
           <div class="section-head">
-            <span class="eyebrow">Featured</span>
-            <h2>Popular learning tracks</h2>
+            <span class="eyebrow">Solutions</span>
+            <h2>Worked examples with step-by-step logic</h2>
           </div>
-          <div class="feature-grid">
-            <article class="feature-card">
-              <span class="pill green">Basic</span>
-              <h3>Foundation Mastery</h3>
-              <p>Number system, fractions, decimals, percentages, ratio and simple equations.</p>
-            </article>
-            <article class="feature-card">
-              <span class="pill blue">Core</span>
-              <h3>School Math</h3>
-              <p>Algebra, geometry, trigonometry, coordinate geometry and mensuration.</p>
-            </article>
-            <article class="feature-card">
-              <span class="pill pink">Advanced</span>
-              <h3>Competitive Math</h3>
-              <p>Statistics, probability, quadratic equations and calculus fundamentals.</p>
-            </article>
+          <div class="solution-grid">
+            <div class="solution-card">
+              <span class="problem-tag">Algebra</span>
+              <h3>Solve: 3x + 5 = 20</h3>
+              <div class="solution-box">
+                <p><strong>Step 1:</strong> Subtract 5 from both sides.</p>
+                <p><strong>Step 2:</strong> 3x = 15</p>
+                <p><strong>Step 3:</strong> Divide by 3</p>
+                <p class="answer">Answer: x = 5</p>
+              </div>
+            </div>
+            <div class="solution-card">
+              <span class="problem-tag">Geometry</span>
+              <h3>Area of triangle</h3>
+              <div class="solution-box">
+                <p><strong>Formula:</strong> 1/2 × base × height</p>
+                <p><strong>Given:</strong> base = 12, height = 8</p>
+                <p><strong>Area:</strong> 48 sq units</p>
+                <p class="answer">Answer: 48</p>
+              </div>
+            </div>
+            <div class="solution-card">
+              <span class="problem-tag">Trigonometry</span>
+              <h3>Find tan 45°</h3>
+              <div class="solution-box">
+                <p><strong>Standard value:</strong> tan 45° = 1</p>
+                <p><strong>Reason:</strong> Opposite and adjacent are equal.</p>
+                <p class="answer">Answer: 1</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
@@ -121,61 +162,21 @@
       <section class="section alt">
         <div class="container">
           <div class="section-head">
-            <span class="eyebrow">Solutions</span>
-            <h2>Step-by-step solved examples</h2>
-          </div>
-          <div class="solution-grid">
-            <div class="solution-card">
-              <span class="problem-tag">Algebra</span>
-              <h3>Solve 2x + 9 = 21</h3>
-              <div class="solution-box">
-                <p><strong>Step 1:</strong> Subtract 9 from both sides.</p>
-                <p><strong>Step 2:</strong> 2x = 12</p>
-                <p><strong>Step 3:</strong> Divide by 2.</p>
-                <p class="answer">Answer: x = 6</p>
-              </div>
-            </div>
-            <div class="solution-card">
-              <span class="problem-tag">Geometry</span>
-              <h3>Area of a triangle</h3>
-              <div class="solution-box">
-                <p><strong>Formula:</strong> 1/2 × base × height</p>
-                <p><strong>Given:</strong> base = 10, height = 7</p>
-                <p><strong>Area:</strong> 35 sq units</p>
-                <p class="answer">Answer: 35</p>
-              </div>
-            </div>
-            <div class="solution-card">
-              <span class="problem-tag">Trigonometry</span>
-              <h3>Find sin 30°</h3>
-              <div class="solution-box">
-                <p><strong>Standard ratio:</strong> 1/2</p>
-                <p><strong>Meaning:</strong> Opposite / hypotenuse = 1/2</p>
-                <p class="answer">Answer: 1/2</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <div class="section-head">
-            <span class="eyebrow">Daily</span>
-            <h2>What you'll learn every day</h2>
+            <span class="eyebrow">Progress</span>
+            <h2>Every lesson builds confidence</h2>
           </div>
           <div class="daily-grid">
             <div class="daily-card">
               <h3>Concept</h3>
-              <p>Learn one concept with visual examples and short explanation.</p>
+              <p>Understand one topic clearly with concise and visual explanations.</p>
             </div>
             <div class="daily-card">
               <h3>Practice</h3>
-              <p>Solve chapter-based questions to improve speed and understanding.</p>
+              <p>Attempt chapter-based exercises and solve problems with confidence.</p>
             </div>
             <div class="daily-card">
               <h3>Revise</h3>
-              <p>Use quick notes and formula bank before every test.</p>
+              <p>Use the formula bank and notes to strengthen memory before tests.</p>
             </div>
           </div>
         </div>
@@ -189,7 +190,7 @@
             <div class="brand-mark">M</div>
             <span>MathVerse Pro</span>
           </div>
-          <p>Math learning platform with concept clarity, tests and revision tools.</p>
+          <p>Premium math learning experience for every student.</p>
         </div>
         <div class="footer-links">
           <a href="chapters.html">Chapters</a>

@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tests | MathVerse Pro</title>
+    <title>Dashboard | MathVerse Pro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
@@ -34,34 +34,52 @@
 
     <main class="page-shell">
       <div class="container page-header">
-        <span class="eyebrow">Assessment</span>
-        <h1>Mock tests and chapter quizzes</h1>
+        <span class="eyebrow">Student Dashboard</span>
+        <h1>Your learning progress</h1>
       </div>
 
-      <div class="container test-grid">
-        <div class="quiz-item">
-          <span class="test-badge">Test 1</span>
-          <h3>Foundation Test</h3>
-          <p>20 Questions | 15 Minutes</p>
-          <button class="btn btn-light small" data-link="practice.html">Take Test</button>
+      <div class="container dashboard-grid">
+        <div class="stat-card accent">
+          <span>Completed Chapters</span>
+          <strong>5/12</strong>
+          <small>Good progress this week</small>
         </div>
-        <div class="quiz-item">
-          <span class="test-badge">Test 2</span>
-          <h3>Algebra Sprint</h3>
-          <p>25 Questions | 20 Minutes</p>
-          <button class="btn btn-light small" data-link="practice.html">Take Test</button>
+        <div class="stat-card blue">
+          <span>Practice Score</span>
+          <strong>84%</strong>
+          <small>Steady improvement</small>
         </div>
-        <div class="quiz-item">
-          <span class="test-badge">Test 3</span>
-          <h3>Geometry Challenge</h3>
-          <p>15 Questions | 18 Minutes</p>
-          <button class="btn btn-light small" data-link="practice.html">Take Test</button>
+        <div class="stat-card pink">
+          <span>Mock Tests</span>
+          <strong>3</strong>
+          <small>More tests recommended</small>
         </div>
-        <div class="quiz-item">
-          <span class="test-badge">Test 4</span>
-          <h3>Probability & Stats</h3>
-          <p>20 Questions | 18 Minutes</p>
-          <button class="btn btn-light small" data-link="practice.html">Take Test</button>
+      </div>
+
+      <div class="container panel-grid">
+        <div class="panel-card">
+          <h3>Learning Streak</h3>
+          <div class="progress-row">
+            <span>Algebra</span>
+            <div class="tiny-progress"><span style="width: 78%"></span></div>
+          </div>
+          <div class="progress-row">
+            <span>Geometry</span>
+            <div class="tiny-progress"><span style="width: 64%"></span></div>
+          </div>
+          <div class="progress-row">
+            <span>Calculus</span>
+            <div class="tiny-progress"><span style="width: 42%"></span></div>
+          </div>
+        </div>
+
+        <div class="panel-card">
+          <h3>Next Goals</h3>
+          <ul class="goal-list">
+            <li>Complete Trigonometry revision notes</li>
+            <li>Finish 2 mock tests this week</li>
+            <li>Revise algebra formulas</li>
+          </ul>
         </div>
       </div>
     </main>
@@ -75,9 +93,9 @@
           </div>
         </div>
         <div class="footer-links">
+          <a href="chapters.html">Chapters</a>
           <a href="practice.html">Practice</a>
-          <a href="notes.html">Notes</a>
-          <a href="formulas.html">Formulas</a>
+          <a href="tests.html">Tests</a>
         </div>
       </div>
     </footer>
