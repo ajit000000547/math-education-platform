@@ -3,10 +3,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   buttons.forEach((button) => {
     button.addEventListener("click", () => {
-      if (button.textContent.trim().includes("Take Test") || button.textContent.trim().includes("Start")) {
+      const text = button.textContent.trim();
+      if (text.includes("Take Test") || text.includes("Start")) {
         button.textContent = "Open Now";
       }
     });
   });
 });
-
