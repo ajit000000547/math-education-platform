@@ -1,11 +1,11 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const buttons = document.querySelectorAll(".btn");
+  const actionButtons = document.querySelectorAll(".btn[data-link]");
 
-  buttons.forEach((button) => {
-    const text = button.textContent.trim();
+  actionButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      if (text.includes("Start") || text.includes("Take Test") || text.includes("Open Now")) {
-        button.textContent = "Open Now";
+      const link = button.dataset.link;
+      if (link) {
+        window.location.href = link;
       }
     });
   });
