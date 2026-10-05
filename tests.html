@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-page="tests">
     <header class="topbar">
       <div class="container nav">
         <div class="brand">
@@ -26,7 +26,7 @@
           <a href="formulas.html">Formulas</a>
         </nav>
         <div class="nav-actions">
-          <button class="btn btn-light" data-link="dashboard.html">Login</button>
+          <button class="btn btn-light" data-auth="login">Login</button>
           <button class="btn btn-primary" data-link="chapters.html">Premium</button>
         </div>
       </div>
@@ -38,32 +38,7 @@
         <h1>Mock tests and chapter quizzes</h1>
       </div>
 
-      <div class="container test-grid">
-        <div class="quiz-item">
-          <span class="test-badge">Test 1</span>
-          <h3>Foundation Test</h3>
-          <p>20 Questions | 15 Minutes</p>
-          <button class="btn btn-light small" data-link="practice.html">Take Test</button>
-        </div>
-        <div class="quiz-item">
-          <span class="test-badge">Test 2</span>
-          <h3>Algebra Sprint</h3>
-          <p>25 Questions | 20 Minutes</p>
-          <button class="btn btn-light small" data-link="practice.html">Take Test</button>
-        </div>
-        <div class="quiz-item">
-          <span class="test-badge">Test 3</span>
-          <h3>Geometry Challenge</h3>
-          <p>15 Questions | 18 Minutes</p>
-          <button class="btn btn-light small" data-link="practice.html">Take Test</button>
-        </div>
-        <div class="quiz-item">
-          <span class="test-badge">Test 4</span>
-          <h3>Probability & Stats</h3>
-          <p>20 Questions | 18 Minutes</p>
-          <button class="btn btn-light small" data-link="practice.html">Take Test</button>
-        </div>
-      </div>
+      <div class="container test-grid" id="test-grid"></div>
     </main>
 
     <footer class="site-footer">
@@ -82,6 +57,8 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

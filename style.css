@@ -47,6 +47,10 @@ button {
   cursor: pointer;
 }
 
+input {
+  font: inherit;
+}
+
 .container {
   width: min(1180px, calc(100% - 32px));
   margin: 0 auto;
@@ -136,6 +140,11 @@ button {
 
 .btn:hover {
   transform: translateY(-1px);
+}
+
+.btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 .btn-light {
@@ -630,6 +639,139 @@ button {
   align-items: center;
   gap: 18px;
   flex-wrap: wrap;
+}
+
+.app-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 200;
+}
+
+.app-modal.open {
+  display: flex;
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(2, 5, 12, 0.7);
+} 
+
+.modal-card {
+  position: relative;
+  width: min(540px, calc(100% - 24px));
+  background: #0b1324;
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 22px;
+  padding: 20px;
+  z-index: 1;
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 14px;
+}
+
+.modal-close {
+  background: transparent;
+  color: var(--text);
+  font-size: 1.8rem;
+  line-height: 1;
+}
+
+.auth-form {
+  display: grid;
+  gap: 14px;
+}
+
+.auth-form input {
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  border-radius: 10px;
+  padding: 0.9rem 1rem;
+  color: var(--text);
+}
+
+.quiz-card {
+  display: grid;
+  gap: 18px;
+}
+
+.quiz-meta {
+  display: flex;
+  justify-content: space-between;
+  color: var(--muted);
+  font-size: 0.8rem;
+}
+
+.quiz-options {
+  display: grid;
+  gap: 10px;
+}
+
+.quiz-option {
+  width: 100%;
+  text-align: left;
+  background: rgba(255,255,255,0.04);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: var(--text);
+  border-radius: 12px;
+  padding: 0.85rem 1rem;
+}
+
+.quiz-option.selected {
+  background: rgba(124, 92, 255, 0.2);
+  border-color: rgba(124, 92, 255, 0.4);
+}
+
+.quiz-actions {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+.result-card {
+  display: grid;
+  gap: 16px;
+  justify-items: center;
+  text-align: center;
+}
+
+.score-ring {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: conic-gradient(var(--success) 0deg 300deg, rgba(255,255,255,0.08) 300deg 360deg);
+  color: white;
+  font-weight: 800;
+  font-size: 1.3rem;
+}
+
+.toast {
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+  background: rgba(17, 24, 39, 0.95);
+  border: 1px solid rgba(255,255,255,0.08);
+  color: white;
+  padding: 0.8rem 1rem;
+  border-radius: 12px;
+  opacity: 0;
+  transform: translateY(12px);
+  transition: all 0.2s ease;
+  z-index: 250;
+}
+
+.toast.show {
+  opacity: 1;
+  transform: translateY(0);
 }
 
 @media (max-width: 980px) {

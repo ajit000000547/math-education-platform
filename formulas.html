@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-page="formulas">
     <header class="topbar">
       <div class="container nav">
         <div class="brand">
@@ -26,7 +26,7 @@
           <a href="formulas.html">Formulas</a>
         </nav>
         <div class="nav-actions">
-          <button class="btn btn-light" data-link="dashboard.html">Login</button>
+          <button class="btn btn-light" data-auth="login">Login</button>
           <button class="btn btn-primary" data-link="chapters.html">Premium</button>
         </div>
       </div>
@@ -38,44 +38,7 @@
         <h1>High-value formulas</h1>
       </div>
 
-      <div class="container formula-grid">
-        <div class="formula-panel">
-          <h3>Algebra</h3>
-          <ul>
-            <li>(a+b)<sup>2</sup> = a<sup>2</sup> + 2ab + b<sup>2</sup></li>
-            <li>(a-b)<sup>2</sup> = a<sup>2</sup> - 2ab + b<sup>2</sup></li>
-            <li>a<sup>2</sup> - b<sup>2</sup> = (a-b)(a+b)</li>
-            <li>x = [-b ± √(b² - 4ac)] / 2a</li>
-          </ul>
-        </div>
-        <div class="formula-panel">
-          <h3>Geometry</h3>
-          <ul>
-            <li>Area of rectangle = l × b</li>
-            <li>Area of triangle = 1/2 × b × h</li>
-            <li>Area of circle = πr²</li>
-            <li>Volume of cube = a³</li>
-          </ul>
-        </div>
-        <div class="formula-panel">
-          <h3>Trigonometry</h3>
-          <ul>
-            <li>sin θ = opposite / hypotenuse</li>
-            <li>cos θ = adjacent / hypotenuse</li>
-            <li>tan θ = opposite / adjacent</li>
-            <li>sin²θ + cos²θ = 1</li>
-          </ul>
-        </div>
-        <div class="formula-panel">
-          <h3>Statistics</h3>
-          <ul>
-            <li>Mean = sum of values / total values</li>
-            <li>Median = middle value in sorted data</li>
-            <li>Mode = most repeated value</li>
-            <li>Range = max - min</li>
-          </ul>
-        </div>
-      </div>
+      <div class="container formula-grid" id="formula-grid"></div>
     </main>
 
     <footer class="site-footer">
@@ -94,6 +57,8 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

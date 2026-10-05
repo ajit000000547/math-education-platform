@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-page="chapters">
     <header class="topbar">
       <div class="container nav">
         <div class="brand">
@@ -26,7 +26,7 @@
           <a href="formulas.html">Formulas</a>
         </nav>
         <div class="nav-actions">
-          <button class="btn btn-light" data-link="dashboard.html">Login</button>
+          <button class="btn btn-light" data-auth="login">Login</button>
           <button class="btn btn-primary" data-link="chapters.html">Premium</button>
         </div>
       </div>
@@ -38,91 +38,7 @@
         <h1>Chapter 1 to 12</h1>
       </div>
 
-      <div class="container chapter-grid">
-        <article class="chapter-card level-1">
-          <div class="chapter-number">1</div>
-          <h3>Number System</h3>
-          <p>Natural, whole, integers, rational and real numbers with number properties.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-1">
-          <div class="chapter-number">2</div>
-          <h3>Fractions & Decimals</h3>
-          <p>Operations with fractions, decimal conversion, percentages and simplification.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-1">
-          <div class="chapter-number">3</div>
-          <h3>Linear Equations</h3>
-          <p>One variable and two variable equations solved graphically and algebraically.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-1">
-          <div class="chapter-number">4</div>
-          <h3>Algebraic Expressions</h3>
-          <p>Coefficients, terms, identities, factorization, and simplification techniques.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-2">
-          <div class="chapter-number">5</div>
-          <h3>Geometry</h3>
-          <p>Lines, angles, triangles, circles, polygons and relation between geometric shapes.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-2">
-          <div class="chapter-number">6</div>
-          <h3>Mensuration</h3>
-          <p>Perimeter, area, volume and surface area of standard 2D and 3D figures.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-2">
-          <div class="chapter-number">7</div>
-          <h3>Trigonometry</h3>
-          <p>Sine, cosine, tangent, identities, and practical real-world angle applications.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-2">
-          <div class="chapter-number">8</div>
-          <h3>Coordinate Geometry</h3>
-          <p>Cartesian plane, distance formula, section formula, lines and slope concepts.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-2">
-          <div class="chapter-number">9</div>
-          <h3>Statistics</h3>
-          <p>Mean, median, mode, bar graphs, grouped data and interpretation methods.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-3">
-          <div class="chapter-number">10</div>
-          <h3>Probability</h3>
-          <p>Sample space, favorable outcomes, simple events, and conditional probability basics.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-3">
-          <div class="chapter-number">11</div>
-          <h3>Quadratic Equations</h3>
-          <p>Roots, discriminant, factoring and solving equations through formula methods.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-
-        <article class="chapter-card level-3">
-          <div class="chapter-number">12</div>
-          <h3>Calculus</h3>
-          <p>Limits, derivatives, basic differentiation and integration concepts.</p>
-          <button class="btn btn-primary small" data-link="dashboard.html">Open</button>
-        </article>
-      </div>
+      <div class="container chapter-grid" id="chapter-grid"></div>
     </main>
 
     <footer class="site-footer">
@@ -141,6 +57,8 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

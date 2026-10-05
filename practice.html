@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-page="practice">
     <header class="topbar">
       <div class="container nav">
         <div class="brand">
@@ -26,7 +26,7 @@
           <a href="formulas.html">Formulas</a>
         </nav>
         <div class="nav-actions">
-          <button class="btn btn-light" data-link="dashboard.html">Login</button>
+          <button class="btn btn-light" data-auth="login">Login</button>
           <button class="btn btn-primary" data-link="chapters.html">Premium</button>
         </div>
       </div>
@@ -38,40 +38,7 @@
         <h1>Start solving with confidence</h1>
       </div>
 
-      <div class="container practice-layout">
-        <div class="practice-card large-card">
-          <h3>Beginner Practice</h3>
-          <ul>
-            <li>1. Simplify: 3/4 + 2/5</li>
-            <li>2. Convert 0.75 into fraction</li>
-            <li>3. Solve: 4x - 7 = 17</li>
-            <li>4. Find 15% of 240</li>
-          </ul>
-          <button class="btn btn-primary" data-link="tests.html">Start Session</button>
-        </div>
-
-        <div class="practice-card large-card">
-          <h3>Intermediate Practice</h3>
-          <ul>
-            <li>1. Factorize x² - 9</li>
-            <li>2. Find area of triangle with base 12 and height 8</li>
-            <li>3. Solve 2x + y = 10, x - y = 2</li>
-            <li>4. Find sin 30° + cos 60°</li>
-          </ul>
-          <button class="btn btn-primary" data-link="tests.html">Start Session</button>
-        </div>
-
-        <div class="practice-card large-card">
-          <h3>Advanced Practice</h3>
-          <ul>
-            <li>1. Solve x² - 5x + 6 = 0</li>
-            <li>2. Differentiate x³ + 2x² - 5</li>
-            <li>3. Find probability of rolling an even number</li>
-            <li>4. Find mean of 10, 15, 20, 25, 30</li>
-          </ul>
-          <button class="btn btn-primary" data-link="tests.html">Start Session</button>
-        </div>
-      </div>
+      <div class="container practice-layout" id="practice-grid"></div>
     </main>
 
     <footer class="site-footer">
@@ -90,6 +57,8 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

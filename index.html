@@ -10,7 +10,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-page="home">
     <header class="topbar">
       <div class="container nav">
         <div class="brand">
@@ -27,7 +27,7 @@
           <a href="formulas.html">Formulas</a>
         </nav>
         <div class="nav-actions">
-          <button class="btn btn-light" data-link="dashboard.html">Login</button>
+          <button class="btn btn-light" data-auth="login">Login</button>
           <button class="btn btn-primary" data-link="chapters.html">Premium</button>
         </div>
       </div>
@@ -201,6 +201,8 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>

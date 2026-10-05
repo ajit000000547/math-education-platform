@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
   </head>
-  <body>
+  <body data-page="dashboard">
     <header class="topbar">
       <div class="container nav">
         <div class="brand">
@@ -26,7 +26,7 @@
           <a href="formulas.html">Formulas</a>
         </nav>
         <div class="nav-actions">
-          <button class="btn btn-light" data-link="dashboard.html">Login</button>
+          <button class="btn btn-light" data-auth="login">Login</button>
           <button class="btn btn-primary" data-link="chapters.html">Premium</button>
         </div>
       </div>
@@ -35,51 +35,20 @@
     <main class="page-shell">
       <div class="container page-header">
         <span class="eyebrow">Student Dashboard</span>
-        <h1>Your learning progress</h1>
+        <h1 id="dashboard-user">Your learning progress</h1>
       </div>
 
-      <div class="container dashboard-grid">
-        <div class="stat-card accent">
-          <span>Completed Chapters</span>
-          <strong>5/12</strong>
-          <small>Good progress this week</small>
-        </div>
-        <div class="stat-card blue">
-          <span>Practice Score</span>
-          <strong>84%</strong>
-          <small>Steady improvement</small>
-        </div>
-        <div class="stat-card pink">
-          <span>Mock Tests</span>
-          <strong>3</strong>
-          <small>More tests recommended</small>
-        </div>
-      </div>
+      <div class="container dashboard-grid" id="dashboard-stats"></div>
 
       <div class="container panel-grid">
         <div class="panel-card">
           <h3>Learning Streak</h3>
-          <div class="progress-row">
-            <span>Algebra</span>
-            <div class="tiny-progress"><span style="width: 78%"></span></div>
-          </div>
-          <div class="progress-row">
-            <span>Geometry</span>
-            <div class="tiny-progress"><span style="width: 64%"></span></div>
-          </div>
-          <div class="progress-row">
-            <span>Calculus</span>
-            <div class="tiny-progress"><span style="width: 42%"></span></div>
-          </div>
+          <div id="dashboard-progress"></div>
         </div>
 
         <div class="panel-card">
           <h3>Next Goals</h3>
-          <ul class="goal-list">
-            <li>Complete Trigonometry revision notes</li>
-            <li>Finish 2 mock tests this week</li>
-            <li>Revise algebra formulas</li>
-          </ul>
+          <ul class="goal-list" id="dashboard-goals"></ul>
         </div>
       </div>
     </main>
@@ -100,6 +69,8 @@
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="data.js"></script>
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
   </body>
 </html>
